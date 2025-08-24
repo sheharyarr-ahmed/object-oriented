@@ -17,3 +17,30 @@ console.log(sheharyar.__proto__ === Person.prototype);
 
 console.log(Person.prototype.isPrototypeOf(sheharyar)); // tells that sheharyar's prototype was created from person's prototype.
 console.log(Person.prototype.isPrototypeOf(Person)); //false the person was created from using the person's prototype.
+
+////////////////
+//////PROTOTYPAL INHERTANCE WORKING
+//function, array, prototypes all are objects therefore they all have their prototypes.
+// now we got to know that every function, array is an object and every object has prototype
+console.log(sheharyar.__proto__); //this returns an object and when we apply .__proto to this returned object it will return object prototype
+console.log(sheharyar.__proto__.__proto__);
+
+const arr = [1, 2, 3, 4, 4, 5, 56, 6, 6, 7];
+console.log(arr.__proto__); //proves is an obejct and it also has an prototype
+console.log(Array.prototype); //here we used .prototype because array is an built method.
+console.log(arr.__proto__.__proto__); //the object's prototype
+
+// now adding an new method in the array's prototype
+Array.prototype.unique = function () {
+  return [...new Set(this)];
+};
+
+console.log(arr);
+console.log(arr.__proto__); //shows the added function added in the array's prototype
+console.log(arr.unique());
+
+console.log(Person.prototype.constructor); //seeing the constructor function
+// console.log(Array.prototype.constructor); //seeing the constructor function
+const h1 = document.querySelector('h1');
+console.log(h1.__proto__);
+console.dir(x => x + 1);
