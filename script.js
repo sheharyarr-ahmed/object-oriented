@@ -73,3 +73,5 @@ console.log(Person.prototype.constructor); //seeing the constructor function
 const h1 = document.querySelector('h1');
 console.log(h1.__proto__);
 console.dir(x => x + 1);
+
+// got to know about the static function

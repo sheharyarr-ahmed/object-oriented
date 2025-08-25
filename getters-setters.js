@@ -34,8 +34,8 @@ class PersonCl {
   // here what we did we put the name of the setter as one of the constructors argumemt so late we replace it with the name but while changing it to name we did _fullName = name and this will also br chnaged in the actual obejct as well
   set fullName(name) {
     //added an function that if the space is not added between the name then alert pops up
-    // if (name.includes(' ')) this._fullName = name;
-    // else alert(`${name} is not an full name`);
+    if (name.includes(' ')) this._fullName = name;
+    else alert(`${name} is not an full name`);
   }
   set NewName(name) {
     this.fullName = name;
