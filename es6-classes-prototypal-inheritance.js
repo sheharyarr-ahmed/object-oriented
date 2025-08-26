@@ -26,7 +26,7 @@ StudentCl.prototype.WhatCar = function () {
 };
 console.dir(StudentCl);
 StudentCl.prototype.calcAge = function () {
-  console.log(`the age is ${2025 - this.birthYear}`); // this will ovveride the above the calcAge function
+  console.log(`the age is ${2025 - this.birthYear}`); // this new method  will ovveride the above the calcAge function as it appears first in the scope chain
 };
 sheharyar.WhatCar();
 sheharyar.calcAge();
