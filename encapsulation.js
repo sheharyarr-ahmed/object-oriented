@@ -9,7 +9,7 @@ class Account {
   locale = navigator.language; //example of an public field that needs to be in every account's instance
   bank = 'Bankist';
   #movements = [];
-  #pin;
+  #pin; // it is set as an let vraiable.
   constructor(name, pin) {
     (this.name = name),
       //   (this.locale = navigator.language), // was written above as an public field
@@ -29,10 +29,12 @@ class Account {
 
   deposit(val) {
     this.#movements.push(val);
+    return this;
   }
 
   withdraw(val) {
     this.deposit(-val);
+    return this;
   }
 
   requestLoan(val) {
@@ -40,6 +42,7 @@ class Account {
       this.deposit(val);
       console.log(`loan approved of rupees, ${val}`);
     }
+    return this;
   }
 }
 
@@ -57,3 +60,6 @@ console.log(acc1.movements); //cannot be visible nor acnnot be accessed
 acc1.requestLoan(200);
 console.log(acc1);
 // acc1.#approveLoan(300);
+
+acc1.deposit(200).withdraw(1800).getMovements();
+console.log(acc1.getMovements());
