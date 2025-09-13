@@ -52,11 +52,6 @@ The codebase is organized as follows:
 
 1. **Clone the Repository**:
 
-   ```
-   git clone https://github.com/your-username/object-oriented-js.git
-   cd object-oriented-js
-   ```
-
 2. **Open in Your Editor**:
 
    - Use VS Code or any editor (as shown in the screenshot for reference).
