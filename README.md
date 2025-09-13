@@ -81,14 +81,4 @@ In a sea of JavaScript developers, my focus on object-oriented practices allows 
 
 If you're hiring or collaborating, this codebase exemplifies how I bring precision and innovation to every project.
 
-## Contributing
-
-Feel free to fork this repo and submit pull requests with improvements or additional challenges. Let's build better OOP examples together!
-
-## License
-
-This project is licensed under the MIT License—see the [LICENSE](LICENSE) file for details. (Add a LICENSE file if not present.)
-
 ---
-
-_Built with passion for clean code. Last updated: September 13, 2025._
