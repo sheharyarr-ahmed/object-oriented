@@ -1,6 +1,6 @@
 # Object-Oriented JavaScript Journey
 
-![Project Screenshot]('../imgs/oop.png')
+![Project Screenshot](imgs/oop.png)
 
 ## Overview
 
