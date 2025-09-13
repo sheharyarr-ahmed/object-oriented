@@ -1,6 +1,6 @@
 # Object-Oriented JavaScript Journey
 
-![Project Screenshot]('imgs/oop.png') <!-- Replace with actual screenshot path if hosting on GitHub or similar -->
+![Project Screenshot]('../imgs/oop.png')
 
 ## Overview
 
